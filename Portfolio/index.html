@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yawar Hayyat — Web Developer</title>
+  <meta name="description" content="Independent web developer building fast, accessible, maintainable websites." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="wordmark" href="#top">Yawar Hayyat</a>
+      <div class="nav__right">
+        <nav class="nav__links" aria-label="Primary">
+          <a href="#work">Work</a>
+          <a href="#capabilities">Capabilities</a>
+          <a href="#process">Process</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" title="Toggle dark/light mode">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5" />
+            <path
+              d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+        <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- Introduction -->
+    <section class="section intro">
+      <div class="rail intro__row">
+        <div class="intro__copy reveal">
+          <p class="eyebrow"><span class="marker" aria-hidden="true"></span>Available for new work and Make Brand
+            identity — Q4 2026</p>
+          <h1 class="display">I&rsquo;m Yawar — I build fast, accessible websites <span class="accent">that hold
+              up.</span></h1>
+          <p class="body intro__bio">Independent web developer working with studios and small teams. I take designs from
+            Figma to production — performance budgets, semantic markup, and a codebase your next developer will thank
+            you for.</p>
+          <p class="intro__links">
+            <a class="link" href="#work">See selected work</a>
+            <a class="link" href="mailto:[yawarhayyat59@gmail.com]">yawarhayyat59@gmail.com</a>
+          </p>
+        </div>
+        <img class="intro__portrait reveal reveal-right" src="/final-removebg-preview.png"
+          alt="Portrait of Yawar Hayyat" width="340" height="425" />
+      </div>
+    </section>
+
+    <!-- Selected work -->
+    <section class="section section--surface" id="work">
+      <div class="rail">
+        <div class="section__head section__head--split reveal">
+          <div>
+            <p class="eyebrow">Selected work</p>
+            <h2 class="heading">Four projects, four different problems.</h2>
+          </div>
+          <p class="small tnum">2024 — 2026</p>
+        </div>
+
+        <ul class="work" id="work-list"><!-- rendered from projects.json by main.js --></ul>
+      </div>
+    </section>
+
+    <!-- Capabilities -->
+    <section class="section" id="capabilities">
+      <div class="rail">
+        <div class="section__head reveal">
+          <p class="eyebrow">Capabilities</p>
+          <h2 class="heading">What I actually do, day to day.</h2>
+        </div>
+
+        <div class="cap-grid stagger-children">
+          <article class="cap">
+            <svg class="cap__icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m18 16 4-4-4-4M6 8l-4 4 4 4m8.5-12-5 16" />
+            </svg>
+            <h3 class="title">Front-end builds</h3>
+            <p class="small">Design handoff to production markup. Component systems that stay consistent as the site
+              grows.</p>
+          </article>
+          <article class="cap">
+            <svg class="cap__icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m12 14 4-4M3.34 19a10 10 0 1 1 17.32 0" />
+            </svg>
+            <h3 class="title">Performance work</h3>
+            <p class="small">Real budgets, measured on real devices. Image pipelines, bundle trimming, and Core Web
+              Vitals that pass.</p>
+          </article>
+          <article class="cap">
+            <svg class="cap__icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="16" cy="4" r="1" />
+              <path d="m18 19-2.5-6.5L11 11m-1.5 9.5L11 17l-1-6-4 2m6-5 4 1" />
+            </svg>
+            <h3 class="title">Accessibility</h3>
+            <p class="small">Semantic HTML, keyboard paths, and screen-reader passes — not an audit bolted on at the
+              end.</p>
+          </article>
+          <article class="cap">
+            <svg class="cap__icon" viewBox="0 0 24 24" aria-hidden="true">
+              <ellipse cx="12" cy="5" rx="9" ry="3" />
+              <path d="M3 5v14a9 3 0 0 0 18 0V5M3 12a9 3 0 0 0 18 0" />
+            </svg>
+            <h3 class="title">APIs &amp; data</h3>
+            <p class="small">Typed endpoints, sensible caching, and integrations that fail loudly instead of silently.
+            </p>
+          </article>
+          <article class="cap">
+            <svg class="cap__icon" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="7" rx="1" />
+              <rect x="3" y="14" width="7" height="7" rx="1" />
+              <rect x="14" y="14" width="7" height="7" rx="1" />
+            </svg>
+            <h3 class="title">CMS setup</h3>
+            <p class="small">Content models your editors understand, so nobody needs a developer to publish a page.</p>
+          </article>
+          <article class="cap">
+            <svg class="cap__icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+            </svg>
+            <h3 class="title">Maintenance</h3>
+            <p class="small">Ongoing retainers for updates, monitoring, and the small fixes that keep a site from
+              rotting.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section section--surface" id="process">
+      <div class="rail">
+        <div class="section__head reveal">
+          <p class="eyebrow">How it works</p>
+          <h2 class="heading">Three steps, no surprises.</h2>
+        </div>
+
+        <ol class="steps stagger-children">
+          <li class="step">
+            <span class="step__num tnum">01</span>
+            <div>
+              <h3 class="title">Scope</h3>
+              <p class="body">A short call, then a written scope with a fixed price and a delivery date. If the brief is
+                fuzzy, we tighten it before anyone writes code.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num tnum">02</span>
+            <div>
+              <h3 class="title">Build</h3>
+              <p class="body">Weekly deploys to a staging URL you can click through. You see progress as it happens
+                instead of waiting for a reveal at the end.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num tnum">03</span>
+            <div>
+              <h3 class="title">Handover</h3>
+              <p class="body">Documented repo, a walkthrough recording, and thirty days of fixes included. Retainers
+                available if you&rsquo;d rather I stay on.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Tools -->
+    <section class="section section--tight">
+      <div class="rail">
+        <p class="eyebrow reveal">Tools I reach for</p>
+        <ul class="tools stagger-children">
+          <li>React</li>
+          <li>Next.js</li>
+          <li>TypeScript</li>
+          <li>Tailwind CSS</li>
+          <li>Supabase</li>
+          <li>Vercel</li>
+          <li>Figma</li>
+          <li>GitHub</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Contact -->
+  <footer class="footer" id="contact">
+    <div class="rail">
+      <div class="footer__top reveal">
+        <p class="eyebrow eyebrow--dim">Start a project</p>
+        <a class="footer__mail" href="mailto:hello@yawar.dev">yawarhayyat59@gmail.com</a>
+        <p class="body footer__note">Tell me what you&rsquo;re building, when you need it, and what&rsquo;s already in
+          place. I reply within two working days.</p>
+        <p class="footer__Phone">Phone: +92 334 4552676</p>
+      </div>
+      <div class="footer__bar reveal">
+        <p class="small">&copy; 2026 Yawar Hayyat</p>
+        <nav class="footer__links" aria-label="Elsewhere">
+          <a href="/" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="www.linkedin.com/in/yawar-hayyat" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="/Yawar_Hayyat.pdf" target="_blank" rel="noreferrer">Resume</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>

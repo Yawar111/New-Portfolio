@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Ronan Media Service",
+    "client": "Ronan Media Service",
+    "year": "2026",
+    "stack": "SvelteKit · Supabase",
+    "summary": "A media service website featuring a modern design with intuitive navigation, and a prominent display of services and professionals.",
+    "image": "/Mediia.png",
+    "link": "https://ronanmediaservice.vercel.app/"
+  },
+  {
+    "title": "AN Spares Dashboard",
+    "client": "AN Spares",
+    "year": "2026",
+    "stack": "React · D3 · Rust API",
+    "summary": "A dashboard for AN Spares that displays sales data, charts, graphs, and other key metrics in a clear and concise manner. It also allows users to track their business performance and make informed decisions.",
+    "image": "/ANSpare's.png",
+    "link": "https://www.anspares.com/"
+  },
+  {
+    "title": "Dental Clinic",
+    "client": "Dr Waheed",
+    "year": "2025",
+    "stack": "Next.js · Postgres · Mapbox",
+    "summary": "A dental clinic website featuring a modern design with intuitive navigation, appointment scheduling capabilities, and a prominent display of services and dental professionals.",
+    "image": "/DentalClinic.png",
+    "link": "https://dental-clinic-waheed.vercel.app/"
+  },
+  {
+    "title": "Dumx Broast",
+    "client": "Dumx Broast",
+    "year": "2024",
+    "stack": "Next.js",
+    "summary": "A modern and responsive fast food restaurant website designed to showcase menu items, location, and ordering options.",
+    "image": "/Dumbx.png",
+    "link": "https://dumx-broast.vercel.app/"
+  }
+]
